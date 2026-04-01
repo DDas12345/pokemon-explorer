@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Eclipse Legends</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/characters.html">Characters</a></li>
+            <li><a href="pages/starters.html">Starter Monsters</a></li>
+            <li><a href="pages/team.html">Team Umbra</a></li>
+            <li><a href="pages/gyms.html">Gym Leaders</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Eclipse Legends</h1>
+            <p>Embark on an epic journey through a land of shadows and light. Capture, train, and battle your
+                way to the top.</p>
+            <button>Discover Adventure</button>
+        </section>
+
+        <section class="features-grid">
+            <div class="card">
+                <h2>Characters</h2>
+                <button>View Characters</button>
+            </div>
+            <div class="card">
+                <h2>Starter Monsters</h2>
+                <button>View Starters</button>
+            </div>
+            <div class="card">
+                <h2>Team Umbra</h2>
+                <button>View Team</button>
+            </div>
+            <div class="card">
+                <h2>Gym Badges</h2>
+                <button>View Gyms</button>
+            </div>
+            <div class="card">
+                <h2>Region Map</h2>
+                <button>View Map</button>
+            </div>
+            <div class="card">
+                <h2>Monster Dex</h2>
+                <button>View Dex</button>
+            </div>
+        </section>
+
+        <section class="search-area">
+            <input type="text" id="searchInput" placeholder="Search Pokémon">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section id="displayData" class="data-container">
+            <!-- API data will be displayed here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

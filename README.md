@@ -55,11 +55,6 @@ https://pokeapi.co/
 
 ---
 
-## 🚀 Deployment
-https://github.com/DDas12345/pokemon-explorer
-
----
-
 ## 💡 Learning Outcomes
 - Learned how to use APIs with fetch()
 - Implemented search, filter, and sort using array methods

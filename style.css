@@ -69,11 +69,6 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.hero button {
-    font-size: 1.2rem;
-    padding: 18px 36px;
-}
-
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -112,6 +107,7 @@ nav {
 
 .card p {
     margin-bottom: 10px;
+    color: #cbd5e1;
 }
 
 .card img {
@@ -132,31 +128,31 @@ button,
     border-radius: 50px;
     border: none;
     cursor: pointer;
-
     font-weight: 600;
     font-size: 1rem;
     color: white;
     text-decoration: none;
-
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
-
     box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
-
     transition: all 0.3s ease;
 }
 
-/* Hover effect */
 button:hover,
 .btn:hover {
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 12px 25px rgba(139, 92, 246, 0.6);
 }
 
-/* Click effect */
 button:active,
 .btn:active {
     transform: scale(0.96);
     box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+.hero button,
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 18px 36px;
 }
 
 .search-area {
@@ -184,10 +180,35 @@ button:active,
     box-shadow: 0 0 10px rgba(129, 140, 248, 0.25);
 }
 
+#regionFilter,
+#typeFilter,
+#sortOption {
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #374151;
+    background-color: #0f172a;
+    color: white;
+    outline: none;
+    min-width: 140px;
+}
+
+#regionFilter:hover,
+#typeFilter:hover,
+#sortOption:hover {
+    border-color: #818cf8;
+}
+
+#regionFilter:focus,
+#typeFilter:focus,
+#sortOption:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.25);
+}
+
 .data-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: 2rem;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -227,6 +248,22 @@ button:active,
     font-size: 1.5rem;
     margin: 10px 0;
     letter-spacing: 1px;
+    color: #f8fafc;
+}
+
+.dex-number {
+    margin: 6px 0 4px;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+.region-name {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .type-container {
@@ -258,6 +295,7 @@ main {
     padding-bottom: 40px;
 }
 
+/* Gym page */
 .gym-card {
     overflow: hidden;
 }
@@ -280,7 +318,7 @@ main {
     color: #cbd5e1;
 }
 
-/* Characters page image cards */
+/* Characters page */
 .character-card img {
     width: 100%;
     max-width: 260px;
@@ -298,6 +336,41 @@ main {
     color: #a5b4fc;
 }
 
+/* Map page */
+.map-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 10% 4rem;
+}
+
+.map-card {
+    background: linear-gradient(145deg, #1e293b, #162033);
+    padding: 2rem;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(129, 140, 248, 0.15);
+    max-width: 1100px;
+    width: 100%;
+}
+
+.region-map {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+.map-description {
+    font-size: 1rem;
+    color: #cbd5e1;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -341,87 +414,4 @@ main {
     .pokemon-card {
         width: 100%;
     }
-}
-
-#typeFilter,
-#sortOption {
-    padding: 0.8rem 1rem;
-    border-radius: 50px;
-    border: 1px solid #374151;
-    background-color: #0f172a;
-    color: white;
-    outline: none;
-}
-
-#typeFilter:hover,
-#sortOption:hover {
-    border-color: #818cf8;
-}
-
-#typeFilter:focus,
-#sortOption:focus {
-    border-color: #818cf8;
-    box-shadow: 0 0 10px rgba(129, 140, 248, 0.25);
-}
-
-.search-area select {
-    min-width: 140px;
-}
-
-.dex-number {
-    margin: 6px 0 10px;
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    font-weight: 600;
-}
-
-#regionFilter,
-#typeFilter,
-#sortOption {
-    padding: 0.8rem 1rem;
-    border-radius: 50px;
-    border: 1px solid #374151;
-    background-color: #0f172a;
-    color: white;
-    outline: none;
-}
-
-#regionFilter:focus,
-#typeFilter:focus,
-#sortOption:focus {
-    border-color: #818cf8;
-    box-shadow: 0 0 10px rgba(129, 140, 248, 0.25);
-}
-
-.map-section {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 10% 4rem;
-}
-
-.map-card {
-    background: linear-gradient(145deg, #1e293b, #162033);
-    padding: 2rem;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(129, 140, 248, 0.15);
-    max-width: 1100px;
-    width: 100%;
-}
-
-.region-map {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    display: block;
-    margin: 0 auto 1.5rem;
-}
-
-.map-description {
-    font-size: 1rem;
-    color: #cbd5e1;
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.8;
 }

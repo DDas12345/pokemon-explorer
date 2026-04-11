@@ -13,12 +13,13 @@
     <nav>
         <div class="logo">Eclipse Legends</div>
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/characters.html">Characters</a></li>
-            <li><a href="pages/starters.html">Starter Monsters</a></li>
-            <li><a href="pages/team.html">Team Umbra</a></li>
-            <li><a href="pages/gyms.html">Gym Leaders</a></li>
-            <li><a href="pages/mechanics.html">Mechanics</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="starters.html">Starter Monsters</a></li>
+            <li><a href="team.html">Team Umbra</a></li>
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="mechanics.html">Mechanics</a></li>
+            <li><a href="map.html">Region Map</a></li>
         </ul>
     </nav>
 
@@ -31,39 +32,89 @@
         </section>
 
         <section class="features-grid">
+
             <div class="card">
                 <h2>Characters</h2>
-                <button>View Characters</button>
+                <a href="pages/characters.html" class="btn">View Characters</a>
             </div>
+
             <div class="card">
                 <h2>Starter Monsters</h2>
-                <button>View Starters</button>
+                <a href="pages/starters.html" class="btn">View Starters</a>
             </div>
+
             <div class="card">
                 <h2>Team Umbra</h2>
-                <button>View Team</button>
+                <a href="pages/team.html" class="btn">View Team</a>
             </div>
+
             <div class="card">
                 <h2>Gym Badges</h2>
-                <button>View Gyms</button>
+                <a href="pages/gyms.html" class="btn">View Gyms</a>
             </div>
+
             <div class="card">
                 <h2>Region Map</h2>
-                <button>View Map</button>
+                <a href="pages/map.html" class="btn">View Map</a>
             </div>
+
             <div class="card">
                 <h2>Monster Dex</h2>
-                <button>View Dex</button>
+                <a href="index.html" class="btn">Open Dex</a>
             </div>
+
         </section>
 
         <section class="search-area">
-            <input type="text" id="searchInput" placeholder="Search Pokémon">
-            <button id="searchBtn">Search</button>
+            <input type="text" id="searchInput" placeholder="Search Pokémon by name or Dex number">
+
+            <select id="regionFilter">
+                <option value="all">All Regions</option>
+                <option value="kanto">Kanto</option>
+                <option value="johto">Johto</option>
+                <option value="hoenn">Hoenn</option>
+                <option value="sinnoh">Sinnoh</option>
+                <option value="unova">Unova</option>
+                <option value="kalos">Kalos</option>
+                <option value="alola">Alola</option>
+                <option value="galar">Galar</option>
+                <option value="paldea">Paldea</option>
+            </select>
+
+            <select id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="fighting">Fighting</option>
+                <option value="poison">Poison</option>
+                <option value="ground">Ground</option>
+                <option value="flying">Flying</option>
+                <option value="psychic">Psychic</option>
+                <option value="bug">Bug</option>
+                <option value="rock">Rock</option>
+                <option value="ghost">Ghost</option>
+                <option value="dragon">Dragon</option>
+                <option value="dark">Dark</option>
+                <option value="steel">Steel</option>
+                <option value="fairy">Fairy</option>
+            </select>
+
+            <select id="sortOption">
+                <option value="az">Sort A-Z</option>
+                <option value="za">Sort Z-A</option>
+                <option value="dex-asc">Dex Number (Low to High)</option>
+                <option value="dex-desc">Dex Number (High to Low)</option>
+            </select>
+
+            <button id="loadBtn">Load Pokémon</button>
         </section>
 
         <section id="displayData" class="data-container">
-            <!-- API data will be displayed here -->
+            <!-- Pokémon cards will appear here -->
         </section>
     </main>
     <script src="script.js"></script>

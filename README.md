@@ -3,6 +3,8 @@
 ## 📌 Description
 Eclipse Legends is a web-based Pokémon-inspired application that allows users to explore a custom Pokémon world along with real Pokémon data using PokéAPI.
 
+This project demonstrates practical use of JavaScript concepts like API handling, asynchronous programming, DOM manipulation, and dynamic UI rendering.
+
 The website combines:
 - A custom game concept (Eclipsia Region)
 - Interactive Pokémon search system
@@ -52,6 +54,11 @@ https://pokeapi.co/
 1. Download or clone the repository
 2. Open the project folder
 3. Open `index.html` in your browser
+
+---
+
+## 🚀 Deployment
+https://ddas12345.github.io/pokemon-explorer/
 
 ---
 
